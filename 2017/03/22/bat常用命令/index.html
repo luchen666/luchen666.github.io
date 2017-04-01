@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>批处理常用命令 | 路程的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;批处理，就是对某对象进行批量处理，被认为是一种简化的脚本语言，应用于dos和windows系统。批处理文件的扩展名为bat。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="批处理常用命令">
+<meta property="og:url" content="http://yoursite.com/2017/03/22/bat常用命令/index.html">
+<meta property="og:site_name" content="路程的博客">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;批处理，就是对某对象进行批量处理，被认为是一种简化的脚本语言，应用于dos和windows系统。批处理文件的扩展名为bat。">
+<meta property="og:updated_time" content="2017-04-01T08:01:13.055Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="批处理常用命令">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;批处理，就是对某对象进行批量处理，被认为是一种简化的脚本语言，应用于dos和windows系统。批处理文件的扩展名为bat。">
+  
+    <link rel="alternate" href="/atom.xml" title="路程的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">路程的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-bat常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/22/bat常用命令/" class="article-date">
+  <time datetime="2017-03-22T13:15:54.849Z" itemprop="datePublished">2017-03-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      批处理常用命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;批处理，就是对某对象进行批量处理，被认为是一种简化的脚本语言，应用于dos和windows系统。批处理文件的扩展名为bat。<br><a id="more"></a></p>
+<h3 id="一-echo-命令"><a href="#一-echo-命令" class="headerlink" title="一.echo 命令"></a>一.echo 命令</h3><p>1.Echo ：显示当前ECHO的状态：ECHO ON 或者ECHO OFF 。<br>2.ECHO ON   ：ECHO状态设为ON,将显示命令行(如每行前的C:>等类似标志)。<br>3.ECHO OFF：CHO状态设为OFF,将不显示命令行(如每行前的C:>等类似标志) 。<br>4.ECHO 字符串 ：将输入的字符串显示在CMD屏幕上。<br>5.ECHO 字符串 &amp;ECHO 字符串 … ：&amp;,类似and的意思，逻辑运算，用来显示多行数据。<br>6.ECHO 字符串 &gt; 文件路径和文件名：将字符串写入文件中，若已有数据将先清空后写入。<br>7.ECHO 字符串 &gt;&gt; 文件路径和文件名 ：将字符串写入文件中，若已有数据将追加到末尾。<br>注意每次：ECHO 字符串 &gt;&gt; 文件路径和文件名，命令之后，ECHO就回自动在在字符串后添加换行符，所以要想直接添加到文件末尾，那么文件中已有的数据，不能是ECHO命令先前输入的（或者手工删掉换行符）<br>8.(ECHO 字符串 &amp;ECHO 字符串…)&gt;文件路径和文件名 ：<br>将多行数据写入文件中（注意括号不能去掉，如果括号去掉的话，那么只能写入最后一个，前面的将输出在CMD窗口中。如果文件中已经有数据，将先自动清空后再写入。<br>9.(ECHO 字符串 &amp;ECHO 字符串…)&gt;&gt;路径和文件名<br>将多行数据写入文件中（注意括号不能去掉，如果括号去掉的话，那么只能写入最后一个，前面的将输出在CMD窗口中。如果文件中已经有数据，就将该字符串追加到文件的末尾。<br>10.(ECHO 字符串)&gt;&gt;文件路径和文件名：在文件中另起一行追加上字符串。如图所示：<br>11.ECHO：输出空行，即相当于输入一个回车,注意命令行中的“．”要紧跟在ECHO后面中间不能有空格，否则“．”将被当作提示信息输出到屏幕。另外“．”可以用，：；＋等任一符号替代。<br>12.ECHO答复语|命令文件名：自动答复命令中的提问 ，不需要人为的输入<br>13.ECHO ^G :“^G”是用Ctrl＋G敲入连体符号，输入多个^G可以产生多声鸣响。</p>
+<h3 id="二、pause命令：运行此句会暂停-提示‘请按任意键继续’"><a href="#二、pause命令：运行此句会暂停-提示‘请按任意键继续’" class="headerlink" title="二、pause命令：运行此句会暂停(提示‘请按任意键继续’)"></a>二、pause命令：运行此句会暂停(提示‘请按任意键继续’)</h3><h3 id="三、-命令："><a href="#三、-命令：" class="headerlink" title="三、@命令："></a>三、@命令：</h3><p>和echo off相象，但它是加在其它命令行的最前面，表示运行时不显示命令行本身。</p>
+<h3 id="四、call命令"><a href="#四、call命令" class="headerlink" title="四、call命令"></a>四、call命令</h3><p>call 调用另一条批处理文件（如果直接调用别的批处理文件 ，执行完那条文件后将无法执行当前文件后续命令）</p>
+<h3 id="五、rem命令"><a href="#五、rem命令" class="headerlink" title="五、rem命令"></a>五、rem命令</h3><p>rem 表示此命令后的字符为解释行，不执行，只是给自己今后查找用的。：： 也可以起到 rem 的注释作用, 而且更简洁有效;</p>
+<h3 id="六、-命令"><a href="#六、-命令" class="headerlink" title="六、%命令"></a>六、%命令</h3><p>%表示参数，参数是指在运行批处理文件时在文件名后加的字符串。变量可以从 %0到%9，%0表示文件名本身，字符串用%1到%9顺序表示。</p>
+<p>1.%0的应用：<br>dos命令行下输入：aa(代表执行aa.bat批处理程序)，%0代表本身文件，这出现了一个不断执行aa.bat命令的死循环</p>
+<p>2.%1到%9的应用</p>
+<h3 id="七、控制命令"><a href="#七、控制命令" class="headerlink" title="七、控制命令"></a>七、控制命令</h3><p>1.if “参数” == “字符串” 　待执行的命令<br>== 等于；EQU等于；NEQ不等于；LSS 小于；<br>EQ 小于或等于；GTR 大于；GEQ大于或等于</p>
+<p>2.if exist 文件名　 待执行的命令（eg：编辑aa1.txt文件）</p>
+<p>3.if errorlevel 数字　 待执行的命令<br>如果返回码等于指定的数字，则条件成立，运行命令，否则运行下一句。如if errorlevel 2 goto x2，DOS程序运行时都会返回一个数字给DOS，称为错误码errorlevel或称返回码</p>
+<p>4.OR [%%f] in (集合) DO [命令]<br>for %%c in (<em>.bat </em>.txt) do type %%c</p>
+<h3 id="八、目录切换"><a href="#八、目录切换" class="headerlink" title="八、目录切换"></a>八、目录切换</h3><p>1.D:     直接输入盘加: 进入对应的盘<br>2.cd/dir 进入dir文件夹<br>3.dir   显示文件夹内的内容</p>
+<h3 id="九、attrib命令，设置文件属性"><a href="#九、attrib命令，设置文件属性" class="headerlink" title="九、attrib命令，设置文件属性"></a>九、attrib命令，设置文件属性</h3><h3 id="十、常用命令"><a href="#十、常用命令" class="headerlink" title="十、常用命令"></a>十、常用命令</h3><p>Del：删除文件<br>Copy：复制文件<br>Xcopy：复制文件夹<br>Md：创建文件夹<br>rd：删除文件夹<br>ren：重命名文件(夹)<br>move：移动文件(夹)<br>find：字符串查找<br>findstr：字符串查找增强，可以进行模式匹配搜索</p>
+<h3 id="十一、常用网络命令和符号篇"><a href="#十一、常用网络命令和符号篇" class="headerlink" title="十一、常用网络命令和符号篇"></a>十一、常用网络命令和符号篇</h3><p>管道命令的优先级高于重定向命令，重定向命令的优先级高于组合命令：|、&gt;、&amp;&amp;</p>
+<p>1.重定向符 &gt;、&gt;&gt;<br>> 重定向符, 意思是传递并且覆盖，它所起的作用是将运行的结果传递到后面的范围（后边可以是文件,也可以是默认的系统控制台，即命令提示符）。<br>>&gt; 重定向符将命令的输出结果追加到其后面的设备中去。这个符号的作用和&gt;有点类似，但他们是有区别的 &gt;&gt;是<br>传递并在文件的末尾追加，而&gt;是覆盖。用法同&gt;一样的。<br>echo hello&gt; 1.txt<br>echo world&gt;&gt;1.txt</p>
+<p>2.命令管道符 |<br>echo Y|rd /s c:\abc，通过管道命令|将echo y 的结果传给rd /s c:\abc 命令，从而达到自动输入y 的目的。</p>
+<p>3.组合命令 &amp;、&amp;&amp;、||</p>
+<blockquote>
+<p>(1) :&amp; 符号允许同时执行多条命令，当第一个命令执行失败了，也不影响后边的命令执行。这里 &amp; 两边的命令是顺序执行的，从前往后执行。</p>
+<p>(2) &amp;&amp; 符号允许同时执行多条命令，当碰到执行出错的命令后将不再执行后面的命令，如果一直没有出错则一直执行完所有命令。<br>正确的命令后将不执行后面的命令,如果没有出现正确的命令则一直执行完所有命令。</p>
+</blockquote>
+<p>4.转义字符 ^<br>要输出特殊字符，就需要用 echo ^&gt;、echo ^|、echo ^|^|、echo ^^……之类的格式来处理</p>
+<p>5.变量引导符 %</p>
+<blockquote>
+<p>(1)变量引用：当百分号成对出现，并且其间包含非特殊字符时，如%var%、%str%<br>(2)形式参数的引用，%0 表示批处理文件本身，包括完整的路径和扩展名；%1至%9 表示第一个参数至第九个参数。<br>(3)set /a 语句，表示两数相除取余数。在命令行窗口中，只需要单个的%，在批处理文件中，需要连续两个百分号，写成%%。<br>set /a num=4%%2，得到num为0而非2<br>(4)转义符号：如果要显示%本身时，需要在前面用%来转义。<br>echo 一个百分号：%%<br>echo 两个百分号：%%%%<br>echo 三个百分号：%%%%%%</p>
+</blockquote>
+<p>6.界定符 “”</p>
+<blockquote>
+<p>(1)在表示带有空格或特殊符号的路径时常要用””来将路径括起来。<br>例1：cd /d cd “d:\program files\^%*abc”<br>因为路径中带有空格和特殊符号，所以要用””将路径括起来。<br>(2)表示其中的内容是一个完整的字符串。<br>例2：<code>set &quot;var=abc 123&quot;</code><br><code>echo %var%</code> </p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/22/bat常用命令/" data-id="cj0yytgkd0000koujg88i22ib" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/22/bat常用命令/">批处理常用命令</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 LuChen<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
